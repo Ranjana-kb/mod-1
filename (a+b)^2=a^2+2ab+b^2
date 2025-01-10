@@ -1,0 +1,8 @@
+a = float (input" Enter a:"))
+b = float (input("Enter b: "))
+1bs = (a + b)**2
+rbs: (a**2)+(2*a*b) + (b**2)
+if lbs= rbs!
+print("True")
+else
+print ("False")
