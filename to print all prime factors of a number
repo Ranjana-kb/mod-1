@@ -1,0 +1,14 @@
+num = int(input("Enter a number: "))
+
+
+factor = 2
+
+print("Prime factors are:")
+
+
+while num > 1:
+    if num % factor == 0:
+        print(factor, end=" ")
+        num //= factor
+    else:
+        factor += 1
