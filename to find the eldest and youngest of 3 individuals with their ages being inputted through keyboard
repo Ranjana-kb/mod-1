@@ -1,0 +1,23 @@
+age1 = int(input("Enter the age of the first person: "))
+age2 = int(input("Enter the age of the second person: "))
+age3 = int(input("Enter the age of the third person: "))
+
+
+if age1 >= age2 and age1 >= age3:
+    eldest = age1
+elif age2 >= age1 and age2 >= age3:
+    eldest = age2
+else:
+    eldest = age3
+
+
+if age1 <= age2 and age1 <= age3:
+    youngest = age1
+elif age2 <= age1 and age2 <= age3:
+    youngest = age2
+else:
+    youngest = age3
+
+
+print("The eldest person's age is:", eldest)
+print("The youngest person's age is:", youngest)
