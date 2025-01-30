@@ -1,0 +1,19 @@
+side1 = float(input("Enter the first side: "))
+side2 = float(input("Enter the second side: "))
+side3 = float(input("Enter the third side: "))
+
+
+if side1 > side2 and side1 > side3:
+    hypotenuse = side1
+    a, b = side2, side3
+elif side2 > side1 and side2 > side3:
+    hypotenuse = side2
+    a, b = side1, side3
+else:
+    hypotenuse = side3
+    a, b = side1, side2
+
+if hypotenuse**2 == a**2 + b**2:
+    print("The given triangle is a right triangle.")
+else:
+    print("The given triangle is not a right triangle.")
