@@ -1,0 +1,12 @@
+x = float(input("Enter the value of x: "))
+terms = int(input("Enter the no. of terms: "))
+
+cos_value = 1
+sign = -1
+
+for i in range(1, terms):
+    term = (x**(2 * i)) / math.factorial(2 * i)
+    cos_value += sign * term
+    sign *= -1
+
+print("Sum:", cos_value)
