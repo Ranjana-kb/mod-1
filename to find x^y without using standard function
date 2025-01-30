@@ -1,0 +1,11 @@
+x = float(input("Enter the value of x: "))
+y = float(input("Enter the value of y: "))
+result = 1
+
+for _ in range(abs(int(y))):
+    result *= x
+
+if y < 0:
+    result = 1 / result
+
+print(f"{x} raised to the power {y} is: {result}")
